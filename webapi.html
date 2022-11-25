@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="webapi.css" />
+    <script src="webapi.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webapi</title>
+  </head>
+  <body>
+    <div class="box">
+      <form onsubmit="handlesubmit()" id="form">
+        <input type="text" placeholder="Enter userId" name="id" id="id" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <section class="lists">
+      <div class="todo">
+        <h3>Pending</h3>
+        <ul id="pending"></ul>
+      </div>
+
+      <div class="completed">
+        <h3>completed</h3>
+        <ul id="completed"></ul>
+      </div>
+    </section>
+  </body>
+</html>

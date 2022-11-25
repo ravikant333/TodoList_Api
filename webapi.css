@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: rgb(25, 22, 22);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+#form{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form input{
+    display: block;
+    height: 2.5rem;
+    width: 70%;
+    font-size: 1.3rem;
+    margin: 15px 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#form button{
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(44, 44, 251);
+    color:white;
+    border-radius: 5px;
+}
+
+.lists{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.lists h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#completed, #pending{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists li{
+    min-height: 4rem;
+    width: 90%;
+    font-size: 1.2rem;
+    background-color: rgb(194, 149, 16);
+    margin: 15px 15px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:800px) {
+ .lists li {
+             font-size: 1.3rem;
+    }
+    #form input{
+        width:50%;
+    }
+    #form button{
+        width:5rem;
+    }
+}
+@media screen and (min-width:1200px) {
+   
+    #form input{
+        width:30%;
+        height: 2.5rem;
+    }
+    #form button{
+        width:5rem;
+        height: 2.4rem;
+    }
+
+
+    .lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+        margin-top: 20px;
+    }
+
+    .lists li {
+                font-size: 1rem;
+       }
+
+   }
+   
